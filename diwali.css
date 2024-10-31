@@ -1,0 +1,131 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.firecrackers {
+    width: auto;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    z-index: 1;
+    bottom: 110%;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 2; */
+
+
+
+}
+
+main h1 {
+    font-size: 8vw;
+    -webkit-text-stroke: 2px red;
+    color: orange;
+    letter-spacing: 0.7vw;
+    transition: all ease-out 1s;
+    color: yellow;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.h7,
+.h8,
+.h9,
+.h10,
+.h11,
+.h12 {
+    display: none;
+    color: orange;
+    transition: all ease-out 1s;
+}
+
+
+.h7 {
+    margin-left: 2vw;
+}
+
+div {
+    width: 10vw;
+    height: 6vh;
+    /* object-fit: cover; */
+    position: relative;
+
+    bottom: 46vh;
+    transition: transform 0.3s ease-in;
+    z-index: 2;
+}
+
+div .im1 {
+    width: 103%;
+    height: 111%;
+    object-fit: contain;
+    position: relative;
+    transform: translateX(-917%);
+    bottom: 0vh;
+    /* animation: animate 3s linear  ; */
+}
+
+
+div .im2 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    transform: translateX(1290%);
+    bottom: 6vh;
+    /* animation:animate2 2s linear; */
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(-917%);
+
+    }
+
+    /* 50%{
+        transform: translateX(0%);
+    } */
+
+    100% {
+        transform: translateX(7%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateX(1290%);
+    }
+
+    100% {
+        transform: translateX(868%);
+    }
+}
+
+/* transform: translateX(-917%); */
+/* transform: translateX(868%); */
